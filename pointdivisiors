@@ -1,0 +1,18 @@
+class Solution {
+    
+    public int sumofarray(int n,int i){
+        if(i>n){
+            return 1;
+        }
+        if(n%i==0){
+            System.out.print(i + " ");
+        }
+        return sumofarray(n,i+1);
+    }
+    
+    public static void main(String[] args) {
+        Solution obj = new Solution();
+        int n = 56;  // Change this to test other inputs
+        obj.sumofarray(n, 1); 
+    }
+}
